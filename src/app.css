@@ -36,3 +36,16 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+
+/******************************* Main sections  *******************************/
+
+.aboutMe,
+.myWork,
+.contactMe {
+  background-color: var(--primary);
+  margin: 0.5rem;
+  padding: 0.5rem;
+
+  scroll-margin-top: 10rem;
+  flex-direction: column;
+}
