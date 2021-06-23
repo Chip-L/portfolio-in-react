@@ -1,6 +1,7 @@
 {
   "short_name": "Portfolio in React",
   "name": "Chip Long's Portfolio created in React",
+  "description": "A show case of Chip's work. This tells a little bit about him and includes the ability to contact him.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#670667",
+  "background_color": "#ededf6"
 }
