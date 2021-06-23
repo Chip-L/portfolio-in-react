@@ -5,44 +5,37 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <nav>
       <a
-        href="#home"
-        onClick={() => handlePageChange("Home")}
-        className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+        href="#Portfolio"
+        onClick={() => handlePageChange("Portfolio")}
+        className={currentPage === "Portfolio" ? "nav-link active" : "nav-link"}
       >
-        Home
+        Portfolio
       </a>
 
       <div className="bar"></div>
       <a
         href="#about"
-        onClick={() => handlePageChange("About")}
-        //  TODO: Add a comment explaining what this logic is doing
-
-        className={currentPage === "About" ? "nav-link active" : "nav-link"}
+        onClick={() => handlePageChange("About Me")}
+        className={currentPage === "About Me" ? "nav-link active" : "nav-link"}
       >
-        About
-      </a>
-
-      <div className="bar"></div>
-      <a
-        href="#blog"
-        onClick={() => handlePageChange("Blog")}
-        //  TODO: Add a comment explaining what this logic is doing
-
-        className={currentPage === "Blog" ? "nav-link active" : "nav-link"}
-      >
-        Blog
+        About Me
       </a>
 
       <div className="bar"></div>
       <a
         href="#contact"
-        //  TODO: Add a comment explaining what this logic is doing
-
         onClick={() => handlePageChange("Contact")}
         className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
       >
         Contact
+      </a>
+
+      <div className="bar"></div>
+      <a
+        href={process.env.PUBLIC_URL + "/Resume - Lawrence Long III (2015).pdf"}
+        target="_blank"
+      >
+        Resume
       </a>
     </nav>
   );
