@@ -1,0 +1,62 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0.5rem;
+}
+
+nav a {
+  padding: 0.25rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+nav .bar {
+  border-right: 0.2rem solid;
+  margin: 0.5rem;
+  align-self: stretch;
+}
+
+/**************************** Tablets (426-765px)  ****************************/
+@media screen and (min-width: 426px) {
+  nav {
+    align-items: flex-end;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.4rem solid var(--primary);
+    font-size: 2rem;
+    line-height: inherit;
+  }
+
+  nav .bar {
+    display: none;
+  }
+}
+
+/*************************** Desktops (769-1440px)  ***************************/
+@media screen and (min-width: 768px) {
+  nav {
+    padding-right: 3rem;
+  }
+
+  nav a {
+    /* color transitions from: https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3 I was able to figure out how to get the fill I wanted. */
+    background: linear-gradient(
+      to top,
+      var(--primary) 50%,
+      var(--highlight) 50%
+    );
+    background-size: 100% 200%;
+    background-position: top left;
+    transition: all 0.5s ease-out;
+  }
+
+  nav a:hover {
+    color: var(--highlight);
+    background-position: bottom left;
+  }
+}

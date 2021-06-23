@@ -1,0 +1,41 @@
+/* variables: */
+.variables {
+  --primary: #ededf6;
+  --secondary: #445876;
+  --highlight: #670667;
+  --bgColor: #030542;
+  /* --heroImg: url(../images/darkSky.jpg); */
+}
+
+/* universal selector - set box style */
+* {
+  box-sizing: border-box;
+
+  /* for test purposes */
+  /* border: 1px dotted red; */
+}
+
+/* set default font to ~10px per rem */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* make a flex container */
+  display: flex;
+  /* show items vertically -- these are the main containers */
+  flex-direction: column;
+
+  /* set up the screen */
+  width: 100%; /* use entire screen */
+  margin: 0; /* no margins */
+
+  /* set default colors */
+  color: var(--secondary);
+  background-color: var(--bgColor);
+
+  /* set default fonts */
+  font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
