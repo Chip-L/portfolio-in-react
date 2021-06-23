@@ -1,0 +1,134 @@
+/*********************************** Header ***********************************/
+header {
+  /* be sure to keep the background color when scrolling */
+  color: var(--primary);
+  background-color: var(--highlight); /* used if no image */
+  background-image: var(--heroImg);
+  background-size: cover;
+  padding: 0.5rem;
+
+  /* set up how items fit in the container */
+  display: flex;
+  flex-direction: column;
+
+  /* fix to the top of the page (sticky does this without relative positioning!) */
+  position: sticky;
+  top: 0;
+  z-index: 10; /* force it to be on top */
+}
+
+.logo {
+  padding: 0.5rem;
+}
+/* size the head shot image */
+.logo img {
+  display: none;
+}
+
+.logo h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 0.5rem;
+}
+
+nav a {
+  padding: 0.25rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+nav .bar {
+  border-right: 0.2rem solid;
+  margin: 0.5rem;
+  align-self: stretch;
+}
+
+/**************************** Tablets (426-765px)  ****************************/
+@media screen and (min-width: 426px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo img {
+    display: inline;
+    height: 6.4rem;
+    margin-right: 1rem;
+  }
+
+  .logo h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    align-items: flex-end;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 0.4rem solid var(--primary);
+    font-size: 2rem;
+    line-height: inherit;
+  }
+
+  nav .bar {
+    display: none;
+  }
+}
+
+/*************************** Desktops (769-1440px)  ***************************/
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: none;
+    background-color: var(--bgColor);
+    padding: 1rem 0;
+  }
+
+  .logo {
+    padding-left: 3rem;
+    color: var(--primary);
+    background-color: var(--highlight);
+  }
+
+  .logo img {
+    margin-right: 2rem;
+  }
+
+  .logo h1 {
+    font-size: 3rem;
+  }
+
+  nav {
+    padding-right: 3rem;
+  }
+
+  nav a {
+    /* color transitions from: https://dev.to/flyingduck92/creating-fill-background-animation-for-button-using-css-2me3 I was able to figure out how to get the fill I wanted. */
+    background: linear-gradient(
+      to top,
+      var(--primary) 50%,
+      var(--highlight) 50%
+    );
+    background-size: 100% 200%;
+    background-position: top left;
+    transition: all 0.5s ease-out;
+  }
+
+  nav a:hover {
+    color: var(--highlight);
+    background-position: bottom left;
+  }
+}
