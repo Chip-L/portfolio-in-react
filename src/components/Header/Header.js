@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Header.css";
 
-const imageUrl = process.env.PUBLIC_URL + "/assets/images/darkSky.jpg";
+// const imageUrl = process.env.PUBLIC_URL + "/assets/images/darkSky.jpg";
 
 function Header({ currentPage, handlePageChange }) {
   return (
