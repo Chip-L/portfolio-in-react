@@ -5,7 +5,7 @@ import "./app.css";
 
 const App = () => (
   <div className="variables">
-    <PortfolioContainer />;
+    <PortfolioContainer />
   </div>
 );
 

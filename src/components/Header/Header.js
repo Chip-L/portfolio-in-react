@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Header.css";
+
+const imageUrl = process.env.PUBLIC_URL + "/assets/images/darkSky.jpg";
 
 function Header({ currentPage, handlePageChange }) {
   return (
+    // can't use image yet...
+    // <header style={{ backgroundImage: `url(${imageUrl})` }}>
     <header>
       <section class="logo">
         <img
           id="headshot"
-          src={process.env.PUBLIC_URL + "/assets/images/headshot_small.jpg"}
+          src={process.env.PUBLIC_URL + "/assets/images/headshot_small.JPG"}
           alt="head shot"
         />
         <h1>Lawrence A Long III (Chip)</h1>

@@ -3,7 +3,7 @@ header {
   /* be sure to keep the background color when scrolling */
   color: var(--primary);
   background-color: var(--highlight); /* used if no image */
-  background-image: var(--heroImg);
+  /* background-image: var(--heroImg);  <== done in component*/
   background-size: cover;
   padding: 0.5rem;
 
@@ -92,7 +92,7 @@ nav .bar {
     justify-content: space-between;
     align-items: center;
 
-    background-image: none;
+    background-size: none;
     background-color: var(--bgColor);
     padding: 1rem 0;
   }
