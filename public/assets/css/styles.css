@@ -1,10 +1,10 @@
 /* variables: */
-.variables {
+:root {
   --primary: #ededf6;
   --secondary: #445876;
   --highlight: #670667;
   --bgColor: #030542;
-  /* --heroImg: url("/assets/images/darkSky.jpg"); */
+  --heroImg: url("../images/darkSky.jpg");
 }
 
 /* universal selector - set box style */
@@ -24,6 +24,7 @@ body {
   flex-direction: column;
 
   /* set up the screen */
+  height: 100%;
   width: 100%; /* use entire screen */
   margin: 0; /* no margins */
 
@@ -35,17 +36,4 @@ body {
   font-family: "Noto Sans", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.6rem;
   line-height: 2.4rem;
-}
-
-/******************************* Main sections  *******************************/
-
-.aboutMe,
-.myWork,
-.contactMe {
-  background-color: var(--primary);
-  margin: 0.5rem;
-  padding: 0.5rem;
-
-  scroll-margin-top: 10rem;
-  flex-direction: column;
 }
