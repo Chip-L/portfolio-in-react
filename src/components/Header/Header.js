@@ -1,15 +1,10 @@
-// import React, { useState, useEffect } from "react";
 import React from "react";
 import "./Header.css";
 
-// const imageUrl = process.env.PUBLIC_URL + "/assets/images/darkSky.jpg";
-
 function Header({ currentPage, handlePageChange }) {
   return (
-    // can't use image yet...
-    // <header style={{ backgroundImage: `url(${imageUrl})` }}>
     <header>
-      <section class="logo">
+      <section className="logo">
         <img
           id="headshot"
           src={process.env.PUBLIC_URL + "/assets/images/headshot_small.JPG"}
@@ -27,18 +22,14 @@ function Header({ currentPage, handlePageChange }) {
         >
           Portfolio
         </a>
-
         <div className="bar"></div>
         <a
           href="#about"
-          onClick={() => handlePageChange("About Me")}
-          className={
-            currentPage === "About Me" ? "nav-link active" : "nav-link"
-          }
+          onClick={() => handlePageChange("AboutMe")}
+          className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}
         >
           About Me
         </a>
-
         <div className="bar"></div>
         <a
           href="#contact"
@@ -47,7 +38,6 @@ function Header({ currentPage, handlePageChange }) {
         >
           Contact
         </a>
-
         <div className="bar"></div>
         <a
           href={
