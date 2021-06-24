@@ -3,8 +3,7 @@ import "./AboutMe.css";
 
 function AboutMe() {
   return (
-    // <section id="aboutMe" className="container aboutMe">
-    <section className="content">
+    <section className="aboutMe">
       <p>
         Hello! My name is Chip Long. I have been working as a manual software
         quality assurance engineer for the past 12 years. I started that career
@@ -25,7 +24,6 @@ function AboutMe() {
         be testing and/or developing a fullstack website.
       </p>
     </section>
-    // </section>
   );
 }
 
