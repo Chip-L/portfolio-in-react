@@ -1,9 +1,12 @@
 .container {
   background-color: var(--primary);
-  /* margin: 2.5rem; */
+  margin: 0.5rem 0;
   padding: 0.5rem;
 }
 
+h1 {
+  padding-bottom: 0.5rem;
+}
 /**************************** Tablets (426-765px)  ****************************/
 
 @media screen and (min-width: 426px) {
