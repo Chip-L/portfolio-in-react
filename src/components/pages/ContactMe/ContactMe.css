@@ -1,3 +1,45 @@
+p {
+  margin: 1rem 0;
+}
 form {
+  display: flex;
+  flex-direction: column;
+
   margin: 1rem;
+}
+
+.labelSet {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input,
+textarea {
+  font: inherit;
+}
+
+textarea {
+  margin-bottom: 1rem;
+}
+
+button {
+  width: fit-content;
+  margin-left: 2rem;
+}
+
+.errorText {
+  color: #f00;
+}
+
+/**************************** Tablets (426-765px)  ****************************/
+
+@media screen and (min-width: 426px) {
+  .labelSet {
+    flex-direction: row;
+  }
 }

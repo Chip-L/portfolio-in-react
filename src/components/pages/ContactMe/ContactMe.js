@@ -39,7 +39,7 @@ function ContactMe() {
     }
     if (!message) {
       setErrorMessage(
-        "Please enter a message, I'm eager to hear what you have to say"
+        "Please enter a message, I'm eager to hear what you have to say!"
       );
       return;
     }
@@ -52,11 +52,11 @@ function ContactMe() {
   };
 
   return (
-    <div>
-      <div>
-        <p>Hello {userName}</p>
-        <label htmlFor="userName">Your name:</label>
-        <form className="form">
+    <div className="formContainer">
+      <p>{userName ? `Hello ${userName}!` : <>&nbsp;</>}</p>
+      <form className="form">
+        <div className="labelSet">
+          <label htmlFor="userName">Your name:</label>
           <input
             value={userName}
             name="userName"
@@ -64,6 +64,8 @@ function ContactMe() {
             type="text"
             placeholder="username"
           />
+        </div>
+        <div className="labelSet">
           <label htmlFor="email">Your email:</label>
           <input
             value={email}
@@ -72,24 +74,21 @@ function ContactMe() {
             type="email"
             placeholder="email"
           />
-          <label htmlFor="message">Please enter a message for me:</label>
-          <textarea
-            value={message}
-            name="message"
-            onChange={handleInputChange}
-            type="message"
-            placeholder="message"
-          />
-          <button type="button" onClick={handleFormSubmit}>
-            Submit
-          </button>
-        </form>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-      </div>
+        </div>
+        <label htmlFor="message">Please enter a message for me:</label>
+        <textarea
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="message"
+          placeholder="message"
+          rows="4"
+        ></textarea>
+        <button type="button" onClick={handleFormSubmit}>
+          Submit
+        </button>
+      </form>
+      <p className="errorText">{errorMessage ? errorMessage : <>&nbsp;</>}</p>
     </div>
   );
 }
