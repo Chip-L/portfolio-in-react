@@ -1,6 +1,7 @@
 import React from "react";
 import AboutMe from "../pages/AboutMe/AboutMe";
 import ContactMe from "../pages/ContactMe/ContactMe";
+import Portfolio from "../pages/Portfolio/Portfolio";
 import "./ContentContainer.css";
 
 function ContentContainer({ currentPage }) {
@@ -12,6 +13,7 @@ function ContentContainer({ currentPage }) {
     if (currentPage === "ContactMe") {
       return <ContactMe />;
     }
+    return <Portfolio />;
   };
 
   return (
