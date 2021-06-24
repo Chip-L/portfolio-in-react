@@ -7,10 +7,10 @@ import "./ContentContainer.css";
 function ContentContainer({ currentPage }) {
   const renderContent = () => {
     // console.log(currentPage);
-    if (currentPage === "AboutMe") {
+    if (currentPage === "About Me") {
       return <AboutMe />;
     }
-    if (currentPage === "ContactMe") {
+    if (currentPage === "Contact Me") {
       return <ContactMe />;
     }
     return <Portfolio />;

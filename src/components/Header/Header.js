@@ -15,7 +15,7 @@ function Header({ currentPage, handlePageChange }) {
       <nav>
         <a
           href="#Portfolio"
-          onClick={() => handlePageChange("Portfolio")}
+          onClick={() => handlePageChange("My Portfolio")}
           className={
             currentPage === "Portfolio" ? "nav-link active" : "nav-link"
           }
@@ -25,15 +25,15 @@ function Header({ currentPage, handlePageChange }) {
         <div className="bar"></div>
         <a
           href="#about"
-          onClick={() => handlePageChange("AboutMe")}
+          onClick={() => handlePageChange("About Me")}
           className={currentPage === "AboutMe" ? "nav-link active" : "nav-link"}
         >
-          About Me
+          About
         </a>
         <div className="bar"></div>
         <a
           href="#contact"
-          onClick={() => handlePageChange("ContactMe")}
+          onClick={() => handlePageChange("Contact Me")}
           className={
             currentPage === "ContactMe" ? "nav-link active" : "nav-link"
           }
