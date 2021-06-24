@@ -69,7 +69,7 @@ function Portfolio() {
               process.env.PUBLIC_URL +
               "/assets/images/jsCodeQuiz/OpeningScreenScreenshot.jpg"
             }
-            alt="Javascript Code Quiz webpage image"
+            alt="Javascript Code Quiz webpage"
             data-repeat="true"
             data-show-0={
               process.env.PUBLIC_URL +
@@ -116,7 +116,7 @@ function Portfolio() {
               process.env.PUBLIC_URL +
               "/assets/images/JokeTrivia/joke-trivia-demo.gif"
             }
-            alt="Joke Trivia webpage image"
+            alt="Joke Trivia webpage"
           />
           {/* project details */}
           <div className="img-text">
@@ -135,7 +135,7 @@ function Portfolio() {
         >
           <img
             src={process.env.PUBLIC_URL + "/assets/images/weatherDashboard.jpg"}
-            alt="Weather Dashboard webpage image"
+            alt="Weather Dashboard webpage"
           />
           <div className="img-text">
             <span className="project-name">Weather Dashboard</span>
@@ -151,7 +151,7 @@ function Portfolio() {
         >
           <img
             src={process.env.PUBLIC_URL + "/assets/images/MatchGame.jpg"}
-            alt="Match Game webpage image"
+            alt="Match Game webpage"
           />
           <div className="img-text">
             <span className="project-name">Match Game</span>

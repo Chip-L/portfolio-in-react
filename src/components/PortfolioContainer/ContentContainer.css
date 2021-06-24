@@ -1,0 +1,10 @@
+.mainContent {
+  overflow: scroll;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainContent {
+    display: flex;
+    justify-content: center;
+  }
+}

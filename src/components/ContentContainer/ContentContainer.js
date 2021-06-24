@@ -6,7 +6,7 @@ import "./ContentContainer.css";
 
 function ContentContainer({ currentPage }) {
   const renderContent = () => {
-    console.log(currentPage);
+    // console.log(currentPage);
     if (currentPage === "AboutMe") {
       return <AboutMe />;
     }

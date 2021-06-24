@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Header from "../Header/Header";
 import ContentContainer from "../ContentContainer/ContentContainer";
 
+import "./ContentContainer.css";
+
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState("Portfolio");
 
@@ -11,8 +13,9 @@ export default function PortfolioContainer() {
   return (
     <>
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-
-      <ContentContainer currentPage={currentPage} />
+      <div className="mainContent">
+        <ContentContainer currentPage={currentPage} />
+      </div>
       {/* footer */}
     </>
   );
