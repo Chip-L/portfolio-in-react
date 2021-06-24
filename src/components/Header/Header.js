@@ -33,8 +33,10 @@ function Header({ currentPage, handlePageChange }) {
         <div className="bar"></div>
         <a
           href="#contact"
-          onClick={() => handlePageChange("Contact")}
-          className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+          onClick={() => handlePageChange("ContactMe")}
+          className={
+            currentPage === "ContactMe" ? "nav-link active" : "nav-link"
+          }
         >
           Contact
         </a>

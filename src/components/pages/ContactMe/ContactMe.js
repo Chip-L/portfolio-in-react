@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { validateEmail } from "../../../utils/helpers";
 
 import "./ContactMe.css";
@@ -55,7 +55,7 @@ function ContactMe() {
     <div>
       <div>
         <p>Hello {userName}</p>
-        <label for="userName">Your name:</label>
+        <label htmlFor="userName">Your name:</label>
         <form className="form">
           <input
             value={userName}
@@ -64,7 +64,7 @@ function ContactMe() {
             type="text"
             placeholder="username"
           />
-          <label for="email">Your email:</label>
+          <label htmlFor="email">Your email:</label>
           <input
             value={email}
             name="email"
@@ -72,7 +72,7 @@ function ContactMe() {
             type="email"
             placeholder="email"
           />
-          <label for="message">Please enter a message for me:</label>
+          <label htmlFor="message">Please enter a message for me:</label>
           <textarea
             value={message}
             name="message"

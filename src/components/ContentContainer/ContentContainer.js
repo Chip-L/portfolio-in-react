@@ -1,13 +1,16 @@
 import React from "react";
 import AboutMe from "../pages/AboutMe/AboutMe";
+import ContactMe from "../pages/ContactMe/ContactMe";
 import "./ContentContainer.css";
 
 function ContentContainer({ currentPage }) {
   const renderContent = () => {
     console.log(currentPage);
     if (currentPage === "AboutMe") {
-      console.log("about me if statement");
       return <AboutMe />;
+    }
+    if (currentPage === "ContactMe") {
+      return <ContactMe />;
     }
   };
 
