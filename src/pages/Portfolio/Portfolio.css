@@ -1,0 +1,13 @@
+.myWork {
+  display: flex;
+  flex-direction: column;
+}
+
+/**************************** Tablets (426-765px)  ****************************/
+
+@media screen and (min-width: 426px) {
+  .myWork {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
