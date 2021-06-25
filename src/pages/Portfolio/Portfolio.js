@@ -6,11 +6,10 @@ import ProjectDisplay from "../../components/ProjectDisplay/ProjectDisplay";
 import "./Portfolio.css";
 
 function Portfolio() {
-  console.log(demoList);
   return (
     <section className="myWork">
-      {demoList.map((demoItem) => (
-        <ProjectDisplay demoItem={demoItem} />
+      {demoList.map((demoItem, index) => (
+        <ProjectDisplay demoItem={demoItem} key={index} />
       ))}
     </section>
   );

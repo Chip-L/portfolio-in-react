@@ -2,12 +2,21 @@ import React from "react";
 
 import "./ProjectDisplay.css";
 
+// import context for images
+const requestImageFile = require.context("../../assets/images", true);
+
 function ProjectDisplay({ demoItem }) {
+  // console.log(`../../assets/images/${demoItem.imageLocation}`);
+  console.log(demoItem);
+  console.log(
+    "requestImageFile",
+    requestImageFile(`./${demoItem.imageLocation}`)
+  );
   return (
     <div className="imgContainer">
       <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer">
         <img
-          src={"../../assets/images/" + demoItem.imageName}
+          src={requestImageFile(`./${demoItem.imageLocation}`)}
           alt={demoItem.altText}
         />
         <div className="img-text">

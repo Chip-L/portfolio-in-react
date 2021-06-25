@@ -4,7 +4,7 @@
       "appName": "Shop-A-Lot",
       "githubLink": "https://github.com/Chip-L/shop-a-lot",
       "siteLink": "https://shop-a-lot.herokuapp.com/",
-      "imageName": "homepage(logged_out)",
+      "imageLocation": "shopalot/homepage(logged_out).jpg",
       "altText": "Shop-A-Lot e-commerce site",
       "technologiesUsed": [
         "CSS",
@@ -22,7 +22,7 @@
       "appName": "Javascript Code Quiz",
       "githubLink": "https://github.com/Chip-L/jsCodeQuiz",
       "siteLink": "https://chip-l.github.io/jsCodeQuiz/",
-      "imageLocation": "jsCodeQuiz",
+      "imageLocation": "jsCodeQuiz/OpeningScreenScreenshot.jpg",
       "altText": "Javascript Code Quiz webpage",
       "technologiesUsed": ["CSS", "Javascript"]
     },
@@ -30,7 +30,7 @@
       "appName": "Joke Trivia",
       "githubLink": "https://github.com/Chip-L/jokeTrivia",
       "siteLink": "https://chip-l.github.io/jokeTrivia/",
-      "imageLocation": "joke-trivia-demo.gif",
+      "imageLocation": "JokeTrivia/joke-trivia-still.jpg",
       "altText": "Joke Trivia webpage",
       "technologiesUsed": ["jQuery", "Bootstrap", "API", "Group Project"]
     },
