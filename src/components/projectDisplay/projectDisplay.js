@@ -1,10 +1,10 @@
 import React from "react";
 
-import "./projectDisplay.css";
+import "./ProjectDisplay.css";
 
-function projectDisplay({ demoItem }) {
+function ProjectDisplay({ demoItem }) {
   return (
-    <div>
+    <div className="imgContainer">
       <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer">
         <img
           src={"../../assets/images/" + demoItem.imageName}
@@ -22,4 +22,4 @@ function projectDisplay({ demoItem }) {
   );
 }
 
-export default projectDisplay;
+export default ProjectDisplay;

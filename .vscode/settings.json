@@ -1,6 +1,4 @@
 {
-  "cSpell.words": [
-    "headshot",
-    "shopalot"
-  ]
+  "cSpell.words": ["headshot", "shopalot"],
+  "cSpell.ignorePaths": ["node_modules", "*.pdf"]
 }
