@@ -12,6 +12,7 @@ function ProjectDisplay({ demoItem }) {
     "requestImageFile",
     requestImageFile(`./${demoItem.imageLocation}`)
   );
+  console.log(requestImageFile.keys());
   return (
     <div className="imgContainer">
       <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer">
