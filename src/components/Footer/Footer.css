@@ -10,3 +10,27 @@ footer {
   display: flex;
   justify-content: space-around;
 }
+
+footer li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer label {
+  margin: 0;
+}
+/**************************** Tablets (426-765px)  ****************************/
+
+@media screen and (min-width: 426px) {
+  .footerContainer {
+    justify-content: space-around;
+  }
+
+  footer li {
+    flex-direction: row;
+  }
+  footer label {
+    margin-right: 1rem;
+  }
+}

@@ -12,7 +12,7 @@ function Footer() {
           </a>
         </li>
         <li>
-          <label htmlFor="github"> Github:</label>
+          <label htmlFor="github">Github:</label>
           <a
             id="github"
             href="https://github.com/Chip-L/"
