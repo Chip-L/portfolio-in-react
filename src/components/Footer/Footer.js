@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer>
-      <ul className="container">
+      <ul className="footerContainer">
         <li>
           <label htmlFor="phone">Phone:</label>
           <a id="phone" href="tel:7202894751">
