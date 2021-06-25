@@ -2,6 +2,7 @@ import React from "react";
 
 import "./ProjectDisplay.css";
 
+// https://devdesigner.xyz/dynamic-image-import-with-create-react-app/read
 // import context for images
 const requestImageFile = require.context("../../assets/images", true);
 
