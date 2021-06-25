@@ -18,11 +18,6 @@ html {
 }
 
 body {
-  /* make a flex container */
-  display: flex;
-  /* show items vertically -- these are the main containers */
-  flex-direction: column;
-
   /* set up the screen */
   height: 100%;
   width: 100%; /* use entire screen */
@@ -37,3 +32,16 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
+
+#root {
+  min-height: 100%;
+}
+
+/* #root { */
+/* make a flex container */
+/* display: flex; */
+/* show items vertically -- these are the main containers */
+/* flex-direction: column;
+
+  min-height: 100vh;
+} */

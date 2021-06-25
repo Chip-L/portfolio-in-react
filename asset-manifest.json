@@ -1,39 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio-in-react/static/css/main.fddd5a36.chunk.css",
-    "main.js": "/portfolio-in-react/static/js/main.29829569.chunk.js",
-    "main.js.map": "/portfolio-in-react/static/js/main.29829569.chunk.js.map",
+    "main.css": "/portfolio-in-react/static/css/main.5b11ad87.chunk.css",
+    "main.js": "/portfolio-in-react/static/js/main.42acd43c.chunk.js",
+    "main.js.map": "/portfolio-in-react/static/js/main.42acd43c.chunk.js.map",
     "runtime-main.js": "/portfolio-in-react/static/js/runtime-main.34269574.js",
     "runtime-main.js.map": "/portfolio-in-react/static/js/runtime-main.34269574.js.map",
-    "static/js/2.088c0428.chunk.js": "/portfolio-in-react/static/js/2.088c0428.chunk.js",
-    "static/js/2.088c0428.chunk.js.map": "/portfolio-in-react/static/js/2.088c0428.chunk.js.map",
+    "static/js/2.4f99f834.chunk.js": "/portfolio-in-react/static/js/2.4f99f834.chunk.js",
+    "static/js/2.4f99f834.chunk.js.map": "/portfolio-in-react/static/js/2.4f99f834.chunk.js.map",
     "index.html": "/portfolio-in-react/index.html",
-    "static/css/main.fddd5a36.chunk.css.map": "/portfolio-in-react/static/css/main.fddd5a36.chunk.css.map",
-    "static/js/2.088c0428.chunk.js.LICENSE.txt": "/portfolio-in-react/static/js/2.088c0428.chunk.js.LICENSE.txt",
-    "static/media/GameOverScreenshot.jpg": "/portfolio-in-react/static/media/GameOverScreenshot.0ea43c79.jpg",
-    "static/media/HighScoresScreenshot.jpg": "/portfolio-in-react/static/media/HighScoresScreenshot.ebbfa379.jpg",
-    "static/media/JSQuizScreenshot.jpg": "/portfolio-in-react/static/media/JSQuizScreenshot.57f90bbb.jpg",
-    "static/media/Jammming.jpg": "/portfolio-in-react/static/media/Jammming.37ee143a.jpg",
-    "static/media/MatchGame.jpg": "/portfolio-in-react/static/media/MatchGame.dd126f43.jpg",
-    "static/media/OpeningScreenScreenshot.jpg": "/portfolio-in-react/static/media/OpeningScreenScreenshot.a5ca9341.jpg",
-    "static/media/PortfolioCompleted.jpg": "/portfolio-in-react/static/media/PortfolioCompleted.ddd8df96.jpg",
-    "static/media/backpack.jpg": "/portfolio-in-react/static/media/backpack.a8926cba.jpg",
-    "static/media/cart.jpg": "/portfolio-in-react/static/media/cart.cf421ee1.jpg",
-    "static/media/category.jpg": "/portfolio-in-react/static/media/category.3ef43f5a.jpg",
-    "static/media/headshot_small.JPG": "/portfolio-in-react/static/media/headshot_small.10cd65b4.JPG",
-    "static/media/homepage(logged_in).jpg": "/portfolio-in-react/static/media/homepage(logged_in).7a1e5385.jpg",
-    "static/media/homepage(logged_out).jpg": "/portfolio-in-react/static/media/homepage(logged_out).0b44e9c0.jpg",
-    "static/media/joke-trivia-demo.gif": "/portfolio-in-react/static/media/joke-trivia-demo.d638e1eb.gif",
-    "static/media/joke-trivia-still.jpg": "/portfolio-in-react/static/media/joke-trivia-still.576e5fbf.jpg",
-    "static/media/login.jpg": "/portfolio-in-react/static/media/login.31efda30.jpg",
-    "static/media/product.jpg": "/portfolio-in-react/static/media/product.1e72377e.jpg",
-    "static/media/signup.jpg": "/portfolio-in-react/static/media/signup.409ef2b1.jpg",
-    "static/media/weatherDashboard.jpg": "/portfolio-in-react/static/media/weatherDashboard.83254673.jpg"
+    "static/css/main.5b11ad87.chunk.css.map": "/portfolio-in-react/static/css/main.5b11ad87.chunk.css.map",
+    "static/js/2.4f99f834.chunk.js.LICENSE.txt": "/portfolio-in-react/static/js/2.4f99f834.chunk.js.LICENSE.txt",
+    "static/media/headshot_small.10cd65b4.JPG": "/portfolio-in-react/static/media/headshot_small.10cd65b4.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.34269574.js",
-    "static/js/2.088c0428.chunk.js",
-    "static/css/main.fddd5a36.chunk.css",
-    "static/js/main.29829569.chunk.js"
+    "static/js/2.4f99f834.chunk.js",
+    "static/css/main.5b11ad87.chunk.css",
+    "static/js/main.42acd43c.chunk.js"
   ]
 }
