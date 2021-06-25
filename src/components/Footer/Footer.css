@@ -1,0 +1,10 @@
+footer {
+  /* position: sticky; */
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
