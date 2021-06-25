@@ -7,7 +7,7 @@ function projectDisplay({ demoItem }) {
     <div>
       <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer">
         <img
-          src={process.env.PUBLIC_URL + "/assets/images/" + demoItem.imageName}
+          src={"../../assets/images/" + demoItem.imageName}
           alt={demoItem.altText}
         />
         <div className="img-text">

@@ -1,15 +1,13 @@
 import React from "react";
 import "./Header.css";
 
+import headshot from "../../assets/images/headshot_small.JPG";
+
 function Header({ currentPage, handlePageChange }) {
   return (
     <header>
       <section className="logo">
-        <img
-          id="headshot"
-          src={process.env.PUBLIC_URL + "/assets/images/headshot_small.JPG"}
-          alt="head shot"
-        />
+        <img id="headshot" src={headshot} alt="head shot" />
         <h1>Lawrence A Long III (Chip)</h1>
       </section>
       <nav>
