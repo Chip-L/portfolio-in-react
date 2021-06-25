@@ -7,7 +7,6 @@ function ProjectDisplay({ demoItem }) {
 
   return (
     <div className="imgContainer">
-      {/* <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer"> */}
       <img src={process.env.PUBLIC_URL + imageURL} alt={demoItem.altText} />
       <div className="img-text">
         <p>
@@ -31,7 +30,6 @@ function ProjectDisplay({ demoItem }) {
           </a>
         </p>
       </div>
-      {/* </a> */}
     </div>
   );
 }
