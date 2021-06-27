@@ -64,3 +64,5 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ## Usage
 
 Completed site: https://chip-l.github.io/portfolio-in-react/
+
+Screenshot of working app: ![Working Page](./misc/screenshotOfWorkingApp.png)
