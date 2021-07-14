@@ -42,7 +42,7 @@ function Header({ currentPage, handlePageChange }) {
         <a
           href={
             process.env.PUBLIC_URL +
-            "/assets/Resume - Lawrence Long III (2015).pdf"
+            "/assets/Resume - Lawrence Long III (2021).pdf"
           }
           target="_blank"
           rel="noreferrer"
