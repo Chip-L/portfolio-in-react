@@ -89,6 +89,10 @@ function ContactMe() {
         </button>
       </form>
       <p className="errorText">{errorMessage ? errorMessage : <>&nbsp;</>}</p>
+      <p className="note">
+        Form doesn't actually send emails. I'm still looking for the package
+        that will do this without a server
+      </p>
     </div>
   );
 }
