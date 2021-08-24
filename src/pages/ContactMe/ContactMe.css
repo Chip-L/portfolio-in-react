@@ -36,6 +36,12 @@ button {
   color: #f00;
 }
 
+.note {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
 /**************************** Tablets (426-765px)  ****************************/
 
 @media screen and (min-width: 426px) {
