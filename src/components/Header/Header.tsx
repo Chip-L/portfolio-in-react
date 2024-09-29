@@ -1,8 +1,13 @@
-import React from "react";
-import headshot from "../../assets/images/headshot_small.JPG";
+import headshot from "@assets/images/headshot_small.jpg";
+import { getAssetUrl } from "@utils/URLs";
 import "./Header.css";
 
-function Header({ currentPage, handlePageChange }) {
+interface HeaderProps {
+  currentPage: string;
+  handlePageChange: (page: string) => void;
+}
+
+function Header({ currentPage, handlePageChange }: HeaderProps) {
   return (
     <header>
       <section className="logo">
@@ -43,10 +48,7 @@ function Header({ currentPage, handlePageChange }) {
         </a>
         <div className="bar"></div>
         <a
-          href={
-            process.env.PUBLIC_URL +
-            "/assets/Resume - Lawrence Long III (2021).pdf"
-          }
+          href={getAssetUrl("Resume - Lawrence Long III (2021).pdf")}
           target="_blank"
           rel="noreferrer"
         >

@@ -1,7 +1,5 @@
 import { useState } from "react";
-import ContentContainer from "../ContentContainer/ContentContainer";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
+import Header from "@components/Header";
 import "./WebsiteLayout.css";
 
 export default function WebsiteLayout() {
@@ -12,10 +10,10 @@ export default function WebsiteLayout() {
 
   return (
     <>
-      {/* <Header
+      <Header
         currentPage={currentPage}
         handlePageChange={handlePageChange}
-      /> */}
+      />
       {/* <div className="mainContent">
         <ContentContainer currentPage={currentPage} />
       </div> */}
