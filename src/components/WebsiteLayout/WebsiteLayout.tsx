@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Footer from "@components/Footer";
 import Header from "@components/Header";
 import "./WebsiteLayout.css";
 
@@ -17,7 +18,7 @@ export default function WebsiteLayout() {
       {/* <div className="mainContent">
         <ContentContainer currentPage={currentPage} />
       </div> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
