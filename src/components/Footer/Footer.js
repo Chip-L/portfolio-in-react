@@ -7,7 +7,10 @@ function Footer() {
       <ul className="footerContainer">
         <li>
           <label htmlFor="phone">Phone:</label>
-          <a id="phone" href="tel:7202894751">
+          <a
+            id="phone"
+            href="tel:7202894751"
+          >
             720-289-4751
           </a>
         </li>

@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./ProjectDisplay.css";
 
 // https://devdesigner.xyz/dynamic-image-import-with-create-react-app/read
@@ -11,12 +10,16 @@ function ProjectDisplay({ demoItem }) {
   console.log(demoItem);
   console.log(
     "requestImageFile",
-    requestImageFile(`./${demoItem.imageLocation}`)
+    requestImageFile(`./${demoItem.imageLocation}`),
   );
   console.log(requestImageFile.keys());
   return (
     <div className="imgContainer">
-      <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer">
+      <a
+        href={demoItem.siteLink}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img
           src={requestImageFile(`./${demoItem.imageLocation}`)}
           alt={demoItem.altText}

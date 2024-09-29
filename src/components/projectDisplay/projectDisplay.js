@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./ProjectDisplay.css";
 
 function ProjectDisplay({ demoItem }) {
@@ -7,7 +6,10 @@ function ProjectDisplay({ demoItem }) {
 
   return (
     <div className="imgContainer">
-      <img src={process.env.PUBLIC_URL + imageURL} alt={demoItem.altText} />
+      <img
+        src={process.env.PUBLIC_URL + imageURL}
+        alt={demoItem.altText}
+      />
       <div className="img-text">
         <p>
           <span className="project-name">{demoItem.appName}</span>
@@ -17,7 +19,11 @@ function ProjectDisplay({ demoItem }) {
           </span>
         </p>
         <p>
-          <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer">
+          <a
+            href={demoItem.siteLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             See it Live!
           </a>
           <br />

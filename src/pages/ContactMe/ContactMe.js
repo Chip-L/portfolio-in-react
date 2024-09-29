@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
-
 import "./ContactMe.css";
 
 function ContactMe() {
@@ -39,7 +38,7 @@ function ContactMe() {
     }
     if (!message) {
       setErrorMessage(
-        "Please enter a message, I'm eager to hear what you have to say!"
+        "Please enter a message, I'm eager to hear what you have to say!",
       );
       return;
     }
@@ -84,7 +83,10 @@ function ContactMe() {
           placeholder="message"
           rows="4"
         ></textarea>
-        <button type="button" onClick={handleFormSubmit}>
+        <button
+          type="button"
+          onClick={handleFormSubmit}
+        >
           Submit
         </button>
       </form>
