@@ -1,4 +1,4 @@
-import PortfolioContainer from "./components/PortfolioContainer/PortfolioContainer";
+import PortfolioContainer from "@components/PortfolioContainer";
 
 const App = () => (
   <>

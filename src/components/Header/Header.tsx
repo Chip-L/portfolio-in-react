@@ -1,13 +1,21 @@
-import React from "react";
+import headshot from "@assets/images/headshot_small.jpg";
+import { getPublicUrl } from "@utils/URLs";
 import "./Header.css";
 
-import headshot from "../../assets/images/headshot_small.JPG";
+interface HeaderProps {
+  currentPage: string;
+  handlePageChange: (page: string) => void;
+}
 
-function Header({ currentPage, handlePageChange }) {
+function Header({ currentPage, handlePageChange }: HeaderProps) {
   return (
     <header>
       <section className="logo">
-        <img id="headshot" src={headshot} alt="head shot" />
+        <img
+          id="headshot"
+          src={headshot}
+          alt="head shot"
+        />
         <h1>Lawrence A Long III (Chip)</h1>
       </section>
       <nav>
@@ -40,10 +48,7 @@ function Header({ currentPage, handlePageChange }) {
         </a>
         <div className="bar"></div>
         <a
-          href={
-            process.env.PUBLIC_URL +
-            "/assets/Resume - Lawrence Long III (2021).pdf"
-          }
+          href={getPublicUrl("Resume - Lawrence Long III (2021).pdf")}
           target="_blank"
           rel="noreferrer"
         >
