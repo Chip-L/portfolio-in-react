@@ -36,12 +36,3 @@ body {
 #root {
   min-height: 100%;
 }
-
-/* #root { */
-/* make a flex container */
-/* display: flex; */
-/* show items vertically -- these are the main containers */
-/* flex-direction: column;
-
-  min-height: 100vh;
-} */
