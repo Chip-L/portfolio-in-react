@@ -1,13 +1,20 @@
-import React from "react";
-
+import { demoItem } from "types";
+import { getLocalAssetUrl } from "@utils/URLs";
 import "./ProjectDisplay.css";
 
-function ProjectDisplay({ demoItem }) {
-  const imageURL = `/assets/images/${demoItem.imageLocation}`;
+interface ProjectDisplayProps {
+  demoItem: demoItem;
+}
+
+function ProjectDisplay({ demoItem }: ProjectDisplayProps) {
+  const imageURL = getLocalAssetUrl(`images/${demoItem.imageLocation}`);
 
   return (
     <div className="imgContainer">
-      <img src={process.env.PUBLIC_URL + imageURL} alt={demoItem.altText} />
+      <img
+        src={imageURL}
+        alt={demoItem.altText}
+      />
       <div className="img-text">
         <p>
           <span className="project-name">{demoItem.appName}</span>
@@ -17,7 +24,11 @@ function ProjectDisplay({ demoItem }) {
           </span>
         </p>
         <p>
-          <a href={demoItem.siteLink} target="_blank" rel="noopener noreferrer">
+          <a
+            href={demoItem.siteLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             See it Live!
           </a>
           <br />

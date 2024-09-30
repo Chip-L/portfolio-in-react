@@ -1,7 +1,7 @@
 import { useState } from "react";
+import ContentContainer from "@components/ContentContainer";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
-import ContentContainer from "../ContentContainer/ContentContainer";
 import "./PortfolioContainer.css";
 
 export default function PortfolioContainer() {
@@ -16,9 +16,9 @@ export default function PortfolioContainer() {
         currentPage={currentPage}
         handlePageChange={handlePageChange}
       />
-      {/* <div className="mainContent">
+      <div className="mainContent">
         <ContentContainer currentPage={currentPage} />
-      </div> */}
+      </div>
       <Footer />
     </>
   );

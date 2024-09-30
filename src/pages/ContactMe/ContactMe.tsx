@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers";
-
+import { useState } from "react";
+import { validateEmail } from "@utils/helpers";
 import "./ContactMe.css";
 
 function ContactMe() {
@@ -10,7 +9,11 @@ function ContactMe() {
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
+  ) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
     const inputType = target.name;
@@ -26,7 +29,9 @@ function ContactMe() {
     }
   };
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>,
+  ) => {
     e.preventDefault();
 
     if (!userName) {
@@ -39,7 +44,7 @@ function ContactMe() {
     }
     if (!message) {
       setErrorMessage(
-        "Please enter a message, I'm eager to hear what you have to say!"
+        "Please enter a message, I'm eager to hear what you have to say!",
       );
       return;
     }
@@ -80,11 +85,13 @@ function ContactMe() {
           value={message}
           name="message"
           onChange={handleInputChange}
-          type="message"
           placeholder="message"
-          rows="4"
+          rows={4}
         ></textarea>
-        <button type="button" onClick={handleFormSubmit}>
+        <button
+          type="button"
+          onClick={handleFormSubmit}
+        >
           Submit
         </button>
       </form>

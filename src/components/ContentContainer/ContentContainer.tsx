@@ -1,12 +1,14 @@
-import React from "react";
-import AboutMe from "../../pages/AboutMe/AboutMe";
-import ContactMe from "../../pages/ContactMe/ContactMe";
-import Portfolio from "../../pages/Portfolio/Portfolio";
+import AboutMe from "@pages/AboutMe";
+import ContactMe from "@pages/ContactMe";
+import Portfolio from "@pages/Portfolio";
 import "./ContentContainer.css";
 
-function ContentContainer({ currentPage }) {
+interface ContentContainerProps {
+  currentPage: string;
+}
+
+function ContentContainer({ currentPage }: ContentContainerProps) {
   const renderContent = () => {
-    // console.log(currentPage);
     if (currentPage === "About Me") {
       return <AboutMe />;
     }
@@ -20,7 +22,6 @@ function ContentContainer({ currentPage }) {
     <div className="container">
       <h1>{currentPage}</h1>
       {renderContent()}
-      {/* <AboutMe /> */}
     </div>
   );
 }
